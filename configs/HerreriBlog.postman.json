@@ -1,0 +1,83 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6",
+    "name": "HerreriBlog API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Posts",
+      "item": [
+        {
+          "name": "Crear Post",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Nuevo Post\",\n  \"content\": \"Contenido de ejemplo\",\n  \"course\": \"Tecnologia\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/posts",
+              "host": ["{{base_url}}"],
+              "path": ["api", "posts"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Todos los Posts",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/posts",
+              "host": ["{{base_url}}"],
+              "path": ["api", "posts"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Comentarios",
+      "item": [
+        {
+          "name": "Crear Comentario",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"postId\": \"6631a2e4f5d2b8a9d0e7c4b2\",\n  \"userName\": \"Juan Pérez\",\n  \"content\": \"Comentario de prueba\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/comments",
+              "host": ["{{base_url}}"],
+              "path": ["api", "comments"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Comentarios de un Post",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/comments/6631a2e4f5d2b8a9d0e7c4b2",
+              "host": ["{{base_url}}"],
+              "path": ["api", "comments", "6631a2e4f5d2b8a9d0e7c4b2"]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000"
+    }
+  ]
+}

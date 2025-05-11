@@ -1,0 +1,26 @@
+[
+  {
+    "_id": { "$oid": "6631a2e4f5d2b8a9d0e7c4b2" },
+    "title": "Introducción a MongoDB",
+    "content": "Aprende los fundamentos de MongoDB y su integración con Node.js.",
+    "course": "Tecnologia",
+    "createdAt": { "$date": "2025-05-01T12:00:00.000Z" },
+    "comments": []
+  },
+  {
+    "_id": { "$oid": "6631a3b5f5d2b8a9d0e7c4b3" },
+    "title": "Práctica: CRUD con Express",
+    "content": "Guía paso a paso para implementar operaciones CRUD en tu API.",
+    "course": "Taller",
+    "createdAt": { "$date": "2025-05-02T09:30:00.000Z" },
+    "comments": []
+  },
+  {
+    "_id": { "$oid": "6631a4c6f5d2b8a9d0e7c4b4" },
+    "title": "Proyecto Final: Blog Educativo",
+    "content": "Requisitos y estructura del proyecto final para el curso.",
+    "course": "Practica Supervisada",
+    "createdAt": { "$date": "2025-05-03T15:45:00.000Z" },
+    "comments": []
+  }
+]

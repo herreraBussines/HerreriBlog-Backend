@@ -1,0 +1,23 @@
+[
+  {
+    "_id": { "$oid": "6631a5d7f5d2b8a9d0e7c4b5" },
+    "postId": { "$oid": "6631a2e4f5d2b8a9d0e7c4b2" },
+    "userName": "Ana López",
+    "content": "Excelente explicación, me ayudó mucho.",
+    "createdAt": { "$date": "2025-05-01T14:20:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "6631a6e8f5d2b8a9d0e7c4b6" },
+    "postId": { "$oid": "6631a3b5f5d2b8a9d0e7c4b3" },
+    "userName": "Carlos Ruiz",
+    "content": "¿Hay algún ejemplo adicional para relaciones muchos a muchos?",
+    "createdAt": { "$date": "2025-05-02T11:10:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "6631a7f9f5d2b8a9d0e7c4b7" },
+    "postId": { "$oid": "6631a4c6f5d2b8a9d0e7c4b4" },
+    "userName": "María García",
+    "content": "¿Cuál es la fecha límite de entrega?",
+    "createdAt": { "$date": "2025-05-03T16:30:00.000Z" }
+  }
+]
